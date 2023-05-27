@@ -1,0 +1,68 @@
+:root {
+    @import url('https://fonts.googleapis.com/css2?family=Foldit&family=Indie+Flower&family=Press+Start+2P&display=swap');
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-image: url("/_img/backgrounds/bg_sky5933.jpg");
+}
+
+.glassbody {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav button {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1rem;
+    margin: 3px;
+    box-shadow: 10px 10px 0px 0px hsla(0, 0, 0, .5);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.panel {
+    border-image-slice:
+        27 27 27 27;
+    border-image-width:
+        27px 27px 27px 27px;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        repeat repeat;
+    border-image-source: url(/_img/frames/frame_wood.png);
+    /* Need at least 27px of padding to make room for the border */
+    padding: 37px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    min-width: 50%;
+    max-width: 75%;
+    margin: 20px;
+}
+
+.panel.glass {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.woodframe {
+    border-image-slice:
+        27 27 27 27;
+    border-image-width:
+        27px 27px 27px 27px;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        repeat repeat;
+    border-image-source: url(/_img/frames/frame_wood.png);
+}
+
+iframe {
+    margin: 4px;
+}

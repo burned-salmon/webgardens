@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Webgardens Link Generator</title>
+    <link rel="stylesheet" href="/_css/defaults.css">
+    <link rel="stylesheet" href="/_css/basic.css">
+    <link rel="stylesheet" href="/_css/flex.css">
+    <script src="/_js/w3include.js"></script>
+</head>
+
+<body>
+    <div class="glassbody">
+        <div w3-include-html="/_header.html"></div>
+
+        <div class="panel glass">
+
+            <h1>Webgarden Link Generators</h1>
+
+            <h3>This version only works if the person you want to add is using Neocities and has their plants page located at theirusername.neocities.org/webgarden.html</h3>
+            Neocities username: <input type="text" id="ncUser" value="missmoss">
+            <button onclick="createCode1()">Make the code!</button>
+            <br><br>
+            <code style="display:none;" id="unhideDiv1">
+                &lt;iframe src=&quot;https://<span id="ncUser1"></span>.neocities.org/webgarden.html&quot; height=&quot;250px&quot; width=&quot;250px&quot; scrolling=&quot;no&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
+            </code>
+            <script>
+                function createCode1() {
+                    var x = document.getElementById("ncUser").value;
+                    document.getElementById("ncUser1").innerHTML = x;
+                    document.getElementById("unhideDiv1").style.display = "";
+                }
+
+            </script><br>
+
+            <h3>This version should be used if the person is hosting their plants anywhere else.</h3>
+            User's plant page link: <input type="text" id="userLink" value="https://missmoss.neocities.org/webgarden.html">
+            <button onclick="createCode2()">Make the code!</button>
+            <br><br>
+            <code style="display:none;" id="unhideDiv2">
+                &lt;iframe src=&quot;<span id="userLink1"></span>&quot; height=&quot;250px&quot; width=&quot;250px&quot; scrolling=&quot;no&quot; loading=&quot;lazy&quot;&gt;&lt;/iframe&gt;
+            </code>
+            <script>
+                function createCode2() {
+                    var x = document.getElementById("userLink").value;
+                    document.getElementById("userLink1").innerHTML = x;
+                    document.getElementById("unhideDiv2").style.display = "";
+                }
+
+            </script><br>
+
+        </div>
+        <div w3-include-html="/_footer.html"></div>
+    </div>
+</body>
+<script>
+    includeHTML();
+
+</script>
+
+</html>

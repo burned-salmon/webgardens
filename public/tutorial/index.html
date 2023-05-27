@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Webgardens Tutorial</title>
+    <link rel="stylesheet" href="/_css/defaults.css">
+    <link rel="stylesheet" href="/_css/basic.css">
+    <link rel="stylesheet" href="/_css/flex.css">
+    <script src="/_js/w3include.js"></script>
+</head>
+
+<body>
+    <div class="glassbody">
+        <div w3-include-html="/_header.html"></div>
+
+        <div class="panel glass">
+
+            <h1>
+                Webgardens Tutorial
+            </h1>
+            <h3>
+                So, how does this work?
+            </h3>
+            <h5>
+                To create your greenhouse:
+            </h5>
+            <ol>
+                <li>A <b>greenhouse</b> is a page on your site to add your pots. A <b>pot</b> is a 250x250 pixel box that contains a sliver of someone else's website.</li>
+                <li>Now you have two options, depending on who you want to add to your greenhouse:</li>
+                <ol>
+                    <li>Go to <a href="/generator/">the greenhouse generator</a> and type in the user's Neocities username. If they are hosting their plant in the way detailed below, the generator will create the code to add their pot to your website.
+                    </li>
+                    <li>Copy the code below for each pot you want to create. Replace the <code>"PUT A SITE'S POSTS PAGE LINK HERE!"</code> with the link in question.</li>
+                </ol>
+            </ol>
+            <center>
+                <textarea rows="4" cols="80">
+<iframe src="PUT A SITE'S POSTS PAGE LINK HERE!" height="250px" width="250px" scrolling="no"></iframe></textarea>
+            </center>
+            <p>
+                Note: you're free to use CSS to change how your pots look! Just make sure you don't change the height or width to be anything other than 250 pixels, since that messes up the formatting.
+            </p>
+
+            <h5>
+                To create your posts page:
+            </h5>
+            <ol>
+                <li>Create an HTML page on your site to add your plant. A <b>plant</b> is the actual content of a pot. Please prioritize naming it <code><b>webgarden.html</b></code> so that the code generator works, but it's not strictly required if you provide your own link or embed code.</li>
+                <li>Copy the template below into your webgarden.html page. Among the other necessary parts, it contains what is known as a "CSS reset" which is important for consistency.</li>
+                <center>
+                    <textarea rows="4" cols="80">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
+        }
+
+        .plant {
+            background-image: url(_img/backgrounds/bg_leeponzuBark.jpg);
+            width: 250px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="plant">
+        <p>This is some example content for the plant that is actually visible in other people's pots.</p>
+    </div>
+</body>
+
+</html>
+                </textarea>
+                </center>
+                <li>Note that your plants have many restrictions as you edit them:
+                    <ul>
+                        <li>The &lt;div class="plant"&gt; div <b>SHOULD be the only content on this page.</b> To allow the pots to be HTML5 compatible, the scrolling="no" can be removed. We don't want ugly scroll bars in our greenhouses.</li>
+                        <li>Other than that, feel free to use almost anything! Because Webgardens is powered by iframes, any HTML and CSS you use will be visible.</li>
+                        <li><b>Links in your post MUST be set to open in a new tab or the "parent" tab by default!</b> This is because, if you don't, links will open inside the iframe by default. You can achieve the desired behavior by changing your opening
+                            <code>&lt;a href=&quot;linkhere&quot;&gt;</code> into <code>&lt;a href=&quot;linkhere&quot; <b>target=&quot;_blank&quot;</b>&gt;</code> or <code>&lt;a href=&quot;linkhere&quot; <b>target=&quot;_top&quot;</b>&gt;</code>.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+
+        </div>
+        <div w3-include-html="/_footer.html"></div>
+    </div>
+</body>
+<script>
+    includeHTML();
+
+</script>
+
+</html>
