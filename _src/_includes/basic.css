@@ -1,18 +1,25 @@
-:root {
-    @import url('https://fonts.googleapis.com/css2?family=Foldit&family=Indie+Flower&family=Press+Start+2P&display=swap');
-}
-
 body {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Comic Sans MS', cursive;
     background-image: url("/_img/backgrounds/bg_sky5933.jpg");
 }
 
-.glassbody {
+main {
     width: 100%;
     margin: 0;
+}
+
+body, header, main, footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    align-self: center;
 }
 
 nav {
@@ -22,7 +29,7 @@ nav {
 }
 
 nav button {
-    font-family: 'Indie Flower', cursive;
+    font-family: inherit;
     font-size: 1rem;
     margin: 3px;
     box-shadow: 10px 10px 0px 0px hsla(0, 0, 0, .5);

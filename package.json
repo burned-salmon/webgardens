@@ -1,0 +1,24 @@
+{
+  "name": "webgardens",
+  "version": "1.0.0",
+  "description": "The official Webgardens website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burned-salmon/webgardens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/burned-salmon/webgardens/issues"
+  },
+  "homepage": "https://github.com/burned-salmon/webgardens#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

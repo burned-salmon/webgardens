@@ -1,0 +1,232 @@
+.center {
+    margin: 0 auto;
+}
+
+.centerbox {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+h1 {
+  display: block;
+  /*
+  font-size: 2em;
+  /* Default font-size is 2em */
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  /*
+  font-size: 1.5em;
+  /* Default font-size is 1.5em */
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  display: block;
+  /*
+  font-size: 1.17em;
+  /* Default font-size is 1.17em */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h4 {
+  display: block;
+  /*
+  font-size: 1em;
+  /* Default font-size is 1 */
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h5 {
+  display: block;
+  /*
+  font-size: .83em;
+  /* Default font-size is .83 */
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h6 {
+  display: block;
+  /*
+  font-size: .67em;
+  /* Default font-size is .67 */
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  /*
+  font-size: 1.2em;
+  /* Default font-size is... idk */
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+li {
+  display: list-item;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+dl {
+  display: block;
+  /*
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  */
+}
+
+dd {
+  display: block;
+  margin-left: 40px;
+}
+
+dt {
+  display: block;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-image: url("/_img/backgrounds/bg_sky5933.jpg");
+}
+
+main {
+    width: 100%;
+    margin: 0;
+}
+
+body, header, main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav button {
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 3px;
+    box-shadow: 10px 10px 0px 0px hsla(0, 0, 0, .5);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.panel {
+    border-image-slice:
+        27 27 27 27;
+    border-image-width:
+        27px 27px 27px 27px;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        repeat repeat;
+    border-image-source: url(/_img/frames/frame_wood.png);
+    /* Need at least 27px of padding to make room for the border */
+    padding: 37px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    min-width: 50%;
+    max-width: 75%;
+    margin: 20px;
+}
+
+.panel.glass {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.woodframe {
+    border-image-slice:
+        27 27 27 27;
+    border-image-width:
+        27px 27px 27px 27px;
+    border-image-outset:
+        0px 0px 0px 0px;
+    border-image-repeat:
+        repeat repeat;
+    border-image-source: url(/_img/frames/frame_wood.png);
+}
+
+iframe {
+    margin: 4px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.center {
+    justify-content: center;
+}
+
+.flex.space-around {
+    justify-content: space-around;
+}
+
+.flex.space-evenly {
+    justify-content: space-evenly;
+}

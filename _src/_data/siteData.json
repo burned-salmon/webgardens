@@ -1,0 +1,15 @@
+{
+    "name": "Webgardens",
+    "description": "A website made by Corv, filled with fun stuff!",
+    "color": "#DF78F9",
+    "createdBy": {
+        "name": "Corv"
+    },
+    "siteImages": {
+        "button": "/_img/88x31/self/justbecaws-crowbuddy.gif",
+        "icon16": "/_img/favicon-16x16.png",
+        "icon32": "/_img/favicon-32x32.png",
+        "icon128": "/_img/favicon-128x128.png",
+        "icon256": "/_img/favicon-256x256.png"
+    }
+}
