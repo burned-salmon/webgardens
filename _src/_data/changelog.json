@@ -1,5 +1,9 @@
 [
     {
+        "date": "2026-04-08",
+        "content": "Added birdtree.land and plans for a new changelog system to make it easier to tell what got added recently."
+    },
+    {
         "date": "2026-03-17",
         "content": "Added moonlit.exposed."
     },
